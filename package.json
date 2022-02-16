@@ -1,5 +1,7 @@
 {
+  "author": "CheekyAvo",
   "name": "CheekyAvo",
+  "description": "Desktop app inspired by Property Price Checker",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
