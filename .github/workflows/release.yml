@@ -1,6 +1,9 @@
-name: Build
+name: Release
 
-on: push
+on:
+  push:
+    tags:
+      - 'v*'
 
 jobs:
   release:
@@ -25,11 +28,4 @@ jobs:
         run: npm install
         
       - name: build
-        run: npm run make
-
-      - uses: actions/upload-artifact@v2
-        with:
-          name: build-${{ matrix.os }}
-          path: |
-            out/**/*.zip
-            out/**/*.exe
+        run: npm run publish

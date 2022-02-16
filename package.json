@@ -11,7 +11,7 @@
     "start": "ng build --base-href ./ && electron-forge start",
     "package": "electron-forge package",
     "make": "ng build --base-href ./ && electron-forge make",
-    "publish": "electron-forge publish",
+    "publish": "ng build --base-href ./ && electron-forge publish",
     "test": "ng test"
   },
   "private": true,
@@ -35,9 +35,10 @@
           "name": "@electron-forge/publisher-github",
           "config": {
             "repository": {
-              "owner": "cheekyavo",
+              "owner": "jbergler",
               "name": "cheekyavo"
-            }
+            },
+            "draft": true
           }
         }
       ]
