@@ -2,7 +2,7 @@
   "author": "CheekyAvo",
   "name": "CheekyAvo",
   "description": "Desktop app inspired by Property Price Checker",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "main": "app.js",
   "scripts": {
     "ng": "ng",
