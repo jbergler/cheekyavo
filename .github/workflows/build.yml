@@ -26,3 +26,10 @@ jobs:
         
       - name: build
         run: npm run make
+
+      - uses: actions/upload-artifact@v2
+        with:
+          name: build-${{ matrix.os }}
+          path: |
+            out/**/*.zip
+            out/**/*.exe
