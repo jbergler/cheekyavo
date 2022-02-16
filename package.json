@@ -22,14 +22,8 @@
       },
       "makers": [
         {
-          "name": "@electron-forge/maker-squirrel",
-          "config": {
-            "name": "ppc"
-          }
-        },
-        {
           "name": "@electron-forge/maker-zip",
-          "platforms": ["darwin"]
+          "platforms": [ "darwin", "win32" ]
         }
       ],
       "publishers": [
